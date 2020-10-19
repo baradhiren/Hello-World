@@ -4,17 +4,7 @@
 # https://aka.ms/yaml
 
 trigger:
-- master
-
-resources:
-  pipelines:
-  - pipeline: Test2   # Name of the pipeline resource
-    source: Test2 # Name of the pipeline referenced by the pipeline resource
-    project: Test
-    trigger:
-      branches:
-      - releases/*
-      - master
+- integration
 
 pool:
   vmImage: 'ubuntu-latest'
