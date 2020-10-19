@@ -14,7 +14,7 @@ resources:
     trigger:
       branches:
       - releases/*
-      - master
+      - integration
 
 pool:
   vmImage: 'ubuntu-latest'
